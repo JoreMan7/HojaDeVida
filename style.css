@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+}
+
+.container {
+    max-width: 800px; /* Ancho máximo para centrar el contenido */
+    width: 90%; /* Ancho flexible para dispositivos móviles */
+    margin: 2rem auto; /* Centrar la página */
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bordes suaves para un diseño moderno */
+}
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-section {
+    display: flex;
+    gap: 2rem;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+.header-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.quote {
+    font-style: italic;
+    color: #666;
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+.about {
+    border: 1px dashed #ccc;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+}
+
+h3 {
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.languages ul {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.bar {
+    background: #eee;
+    height: 15px;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+}
+
+.fill {
+    background: #2b579a;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.education-entry,
+.experience-entry {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.details h4 {
+    margin-bottom: 0.5rem;
+}
+
+.details p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.details ul {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.details li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.details li:before {
+    content: "•";
+    position: absolute;
+    left: -1rem;
+}
+
+.intereses ul {
+    list-style: none;
+}
+
+.intereses li {
+    margin-bottom: 0.5rem;
+}
+
+/* Adaptaciones para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .education-entry,
+    .experience-entry {
+        grid-template-columns: 1fr;
+    }
+}
